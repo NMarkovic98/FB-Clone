@@ -3,6 +3,7 @@ import { getSession } from 'next-auth/react';
 
 import Login from '../components/Login';
 import Header from '../components/Header';
+import SideBar from '../components/Sidebar';
 
 export default function Home({ session }: { session: any }) {
   if (!session) return <Login />;
@@ -13,15 +14,17 @@ export default function Home({ session }: { session: any }) {
       </Head>
 
       <Header />
-      <main></main>
-      {/* sidebar */}
+      <main>
+        <SideBar />
+      </main>
+
       {/* feed */}
       {/* widgets */}
     </div>
   );
 }
 
-export async function getServerSideProps(context: any) {
+export async function getServerSideProps(context: never) {
   const session = await getSession(context);
 
   return {
