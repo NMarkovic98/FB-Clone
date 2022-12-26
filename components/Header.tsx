@@ -20,8 +20,7 @@ import {
 } from '@heroicons/react/outline';
 
 function Header() {
-  const { data: session, status } = useSession();
-  console.log(session);
+  const { data: session } = useSession();
 
   const runSignOut = () => {
     signOut();
@@ -71,7 +70,9 @@ function Header() {
           layout="fixed"
           onClick={runSignOut}
         />
-        <p className="whitespace-nowrap font-semibold pr-3">Nikola Markovic</p>
+        <p className="whitespace-nowrap font-semibold pr-3">
+          {session?.user?.name}
+        </p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />
         <BellIcon className="icon" />
