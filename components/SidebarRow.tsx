@@ -20,11 +20,11 @@ function SidebarRow({
           width={30}
           height={30}
           layout="fixed"
-          alt="side row image"
+          alt="profile image"
         />
       )}
-      {Icon && <Icon className="h-8 w-8 text-bule-500" />}
-      <p className="hidden lg:inline-flex font-medium">{title}</p>
+      {Icon && <Icon className="h-8 w-8 text-blue-500" />}
+      <p className="hidden sm:inline-flex font-medium">{title}</p>
     </div>
   );
 }
