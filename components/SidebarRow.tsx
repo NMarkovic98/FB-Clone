@@ -24,7 +24,7 @@ function SidebarRow({
         />
       )}
       {Icon && <Icon className="h-8 w-8 text-bule-500" />}
-      <p className="lg:inline-flex sm:hidden  font-medium">{title}</p>
+      <p className="hidden lg:inline-flex font-medium">{title}</p>
     </div>
   );
 }
