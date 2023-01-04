@@ -22,14 +22,18 @@
       "type": "string"
     },
     "image": {
+      "type": "string"
+    },
+    "post_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
-        "files",
         "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+        "audios",
+        "files"
+      ]
     }
   }
 }
