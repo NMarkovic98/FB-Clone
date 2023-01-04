@@ -1,5 +1,5 @@
 {
-  "name": "fb-clone-backend",
+  "name": "backend",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -20,7 +20,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "6b1feb74-6af8-4fd7-9036-7189bd204133"
+    "uuid": "f0364e2f-73d2-4e3d-a4fb-57722ced87cf"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
