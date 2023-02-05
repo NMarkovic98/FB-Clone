@@ -1,7 +1,6 @@
-export async function getCareers(){
+export async function getCareers() {
+  const res = await fetch('http://127.0.0.1:1337/api/careers');
+  const data = await res.json();
 
-    const res = await fetch('http://localhost:1337/api/careers');
-    const data = await res.json();
-
-    return data;
+  return data;
 }
