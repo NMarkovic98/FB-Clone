@@ -1,6 +1,6 @@
 import React from 'react';
 
-import axios from 'axios';
+import { getCareers } from '../utils/helpers';
 
 function Cereers({ career }: { career: any }) {
   return (
@@ -13,8 +13,7 @@ function Cereers({ career }: { career: any }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:1337/api/careers');
-  const data = await res.json();
+  const data = await getCareers();
 
   return {
     props: {
