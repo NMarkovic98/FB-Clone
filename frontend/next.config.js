@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: [
       'links.papareact.com',
+      'localhost',
       'platform-lookaside.fbsbx.com',
       'firebasestorage.googleapis.com',
     ],
