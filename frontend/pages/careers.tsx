@@ -13,7 +13,7 @@ function Cereers({ career }: { career: any }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://127.0.0.1:1337/api/careers');
+  const res = await fetch('http://localhost:1337/api/careers');
   const data = await res.json();
 
   return {
