@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getCareers } from '../utils/helpers';
+import { getCareers } from '../lib/helpers';
 
 function Cereers({ career }: { career: any }) {
   return (
